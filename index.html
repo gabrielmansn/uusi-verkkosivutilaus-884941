@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kauneushoitola Lumière | Kauneushoitola Helsinki</title>
+  <meta name="description" content="Kauneushoitola Lumière tarjoaa laadukkaita kauneushoitoja Helsingissä. Kasvo- ja vartalonhoidot, ripsien pidennykset, kulmien muotoilu ja paljon muuta. Varaa aikasi jo tänään!">
+  <meta property="og:title" content="Kauneushoitola Lumière | Helsinki">
+  <meta property="og:description" content="Laadukkaita kauneushoitoja sydän-Helsingissä. Varaa aikasi helposti verkossa.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lumiere.fi">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1200">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Kauneushoitola Lumière",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Esimerkkikatu 12",
+      "addressLocality": "Helsinki",
+      "postalCode": "00100",
+      "addressCountry": "FI"
+    },
+    "telephone": "+358 40 123 4567",
+    "email": "info@lumiere.fi",
+    "url": "https://lumiere.fi",
+    "openingHours": ["Tu-Fr 09:00-18:00", "Sa 09:00-15:00"],
+    "priceRange": "€€"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="site-header" role="banner">
+    <nav class="navbar" aria-label="Päänavigaatio">
+      <a href="#" class="logo" aria-label="Kauneushoitola Lumière – etusivu">
+        <span class="logo-pre">Kauneushoitola</span>
+        <span class="logo-main">Lumière</span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#palvelut">Palvelut</a></li>
+        <li><a href="#hinnasto">Hinnasto</a></li>
+        <li><a href="#meista">Meistä</a></li>
+        <li><a href="#aukiolo">Aukiolo</a></li>
+      </ul>
+
+      <a href="#yhteydenotto" class="btn btn-nav">Varaa aika</a>
+
+      <button class="hamburger" aria-label="Avaa valikko" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <ul role="list">
+        <li><a href="#palvelut">Palvelut</a></li>
+        <li><a href="#hinnasto">Hinnasto</a></li>
+        <li><a href="#meista">Meistä</a></li>
+        <li><a href="#aukiolo">Aukiolo</a></li>
+        <li><a href="#yhteydenotto" class="btn btn-mobile-cta">Varaa aika</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" aria-label="Etusivu hero">
+      <div class="hero-bg">
+        <div class="hero-overlay"></div>
+        <img
+          src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=1600&q=80"
+          alt="Kauneushoitola Lumièren tunnelma"
+          class="hero-image"
+          loading="eager"
+        >
+      </div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">Helsinki · Kauneushoitola</p>
+        <h1 class="hero-title">
+          Hehkuva iho,<br>
+          <em>levollinen mieli</em>
+        </h1>
+        <p class="hero-sub">Yksilölliset kauneushoidot, jotka tekevät sinusta parhaan versiosi. Asiantunteva palvelu sydän-Helsingissä.</p>
+        <div class="hero-actions">
+          <a href="#yhteydenotto" class="btn btn-primary">Varaa aika nyt</a>
+          <a href="#palvelut" class="btn btn-ghost">Tutustu palveluihin</a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-item">
+            <span class="trust-icon" aria-hidden="true">★★★★★</span>
+            <span>4.9 / 5 asiakasarvio</span>
+          </div>
+          <div class="trust-divider" aria-hidden="true"></div>
+          <div class="trust-item">
+            <span class="trust-icon" aria-hidden="true">✦</span>
+            <span>Yli 500 tyytyväistä asiakasta</span>
+          </div>
+          <div class="trust-divider" aria-hidden="true"></div>
+          <div class="trust-item">
+            <span class="trust-icon" aria-hidden="true">✦</span>
+            <span>Lahjakortit saatavilla</span>
+          </div>
+        </div>
+      </div>
+      <a href="#palvelut" class="scroll-hint" aria-label="Selaa alas">
+        <span class="scroll-arrow"></span>
+      </a>
+    </section>
+
+    <!-- PALVELUT -->
+    <section class="section palvelut" id="palvelut" aria-labelledby="palvelut-otsikko">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-eyebrow">Mitä tarjoamme</p>
+          <h2 id="palvelut-otsikko">Palvelumme</h2>
+          <p class="section-desc">Jokainen hoito on suunniteltu tuomaan esiin luonnollinen kauneutesi ja antamaan sinulle hetki omaa aikaa.</p>
+        </header>
+
+        <div class="palvelut-grid">
+
+          <article class="palvelu-card" tabindex="0">
+            <div class="palvelu-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg>
+            </div>
+            <h3>Kasvohoito</h3>
+            <p>Syvä puhdistus, kuorinta ja ravitseva naamio. Iho hehkuu ja tuntuu uudelta. Hoidon kesto noin 60–90 min.</p>
+            <span class="palvelu-kesto">60–90 min</span>
+          </article>
+
+          <article class="palvelu-card" tabindex="0">
+            <div class="palvelu-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+            </div>
+            <h3>Vartalonhoito</h3>
+            <p>Rentouttava tai kiinteyttävä vartalokääre, joka ravitsee ihoa syvältä ja poistaa väsymyksen jäljiltä.</p>
+            <span class="palvelu-kesto">75 min</span>
+          </article>
+
+          <article class="palvelu-card" tabindex="0">
+            <div class="palvelu-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+            </div>
+            <h3>Ripsien pidennys</h3>
+            <p>Klassinen, volyymiripsi tai hybrid – löydämme juuri sinulle sopivan tyylin. Kestävä ja luonnollinen lopputulos.</p>
+            <span class="palvelu-kesto">90–120 min</span>
+          </article>
+
+          <article class="palvelu-card" tabindex="0">
+            <div class="palvelu-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <h3>Kulmien muotoilu</h3>
+            <p>Langalla tai vahalalla toteutettu kulmien muotoilu ja värjäys. Selkeät, siistit kulmat viimeistelevät ilmeen.</p>
+            <span class="palvelu-kesto">30 min</span>
+          </article>
+
+          <article class="palvelu-card" tabindex="0">
+            <div class="palvelu-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </div>
+            <h3>Jalkahoito</h3>
+            <p>Kosteuttava ja rentouttava jalkahoito, joka sisältää kuorinnan, naamion ja hieronnan. Jalat kiittävät.</p>
+            <span class="palvelu-kesto">60 min</span>
+          </article>
+
+          <article class="palvelu-card palvelu-card--highlight" tabindex="0">
+            <div class="palvelu-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <div class="highlight-badge">Suosittu</div>
+            <h3>Täydellinen hemmottelu</h3>
+            <p>Kasvohoito + vartalonhieronta + ripsien kulmien muotoilu. Kokonaisvaltainen luksuskokemus yhdellä käynnillä.</p>
+            <span class="palvelu-kesto">3 h</span>
+          </article>
+
+        </div>
+
+        <div class="section-cta">
+          <a href="#yhteydenotto" class="btn btn-primary">Varaa hoitosi</a>
+          <p class="lahjakortti-note">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 12v10H4V12"></path><path d="M22 7H2v5h20V7z"></path><path d="M12 22V7"></path><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path></svg>
+            Lahjakortit saatavilla – ilahduta läheistäsi
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT / GALLERY -->
+    <section class="section meista" id="meista" aria-labelledby="meista-otsikko">
+      <div class="container meista-container">
+        <div class="meista-kuvat" aria-label="Kuvia hoitolasta">
+          <div class="kuva-iso">
+            <img
+              src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?w=800&q=80"
+              alt="Kauneushoitola Lumièren hoitohuone"
+              loading="lazy"
+            >
+          </div>
+          <div class="kuva-pieni">
+            <img
+              src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400&q=80"
+              alt="Laadukkaat tuotteet hoitolassa"
+              loading="lazy"
+            >
+          </div>
+          <div class="kuva-pieni">
+            <img
+              src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=400&q=80"
+              alt="Asiakaspalvelu Lumièressä"
+              loading="lazy"
+            >
+          </div>
+        </div>
+        <div class="meista-teksti">
+          <p class="section-eyebrow">Tarina</p>
+          <h2 id="meista-otsikko">Meistä</h2>
+          <p class="meista-lead">Lumière on perustettu uskosta siihen, että jokainen ansaitsee hetken omaa aikaa – ja hoidon, joka on suunniteltu juuri sinulle.</p>
+          <p>Olemme pieni, intohimoinen tiimi kauneusalan ammattilaisia. Käytämme vain laadukkaita, ihoystävällisiä tuotteita ja pidämme huolen, että jokainen asiakas poistuu hoitolastamme paremmalla mielellä kuin tuli.</p>
+          <p>Hoitolassamme on rauhallinen, lämmin tunnelma. Sinun ei tarvitse kiirehtiä mihinkään – tämä hetki on sinun.</p>
+          <div class="meista-arvot">
+            <div class="arvo-item">
+              <span class="arvo-numero">500+</span>
+              <span class="arvo-label">Tyytyväistä asiakasta</span>
+            </div>
+            <div class="arvo-item">
+              <span class="arvo-numero">8+</span>
+              <span class="arvo-label">Vuotta kokemusta</span>
+            </div>
+            <div class="arvo-item">
+              <span class="arvo-numero">4.9</span>
+              <span class="arvo-label">Asiakasarvio</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HINNASTO -->
+    <section class="section hinnasto" id="hinnasto" aria-labelledby="hinnasto-otsikko">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-eyebrow">Hinnat</p>
+          <h2 id="hinnasto-otsikko">Hinnasto</h2>
+          <p class="section-desc">Selkeät hinnat ilman yllätyksiä. Kaikki hoidot sisältävät asiantuntevan konsultaation.</p>
+        </header>
+
+        <div class="hinnasto-grid">
+          <div class="hinnasto-kategoria">
+            <h3 class="kategoria-otsikko">Kasvo- ja vartalonhoidot</h3>
+            <ul class="hinta-lista" role="list">
+              <li class="hinta-rivi">
+                <span class="hinta-nimi">Peruskasvohoito</span>
+                <span class="hinta-arvo">65 €</span>
+              </li>
+              <li class="hinta-rivi">
+                <span class="hinta-nimi">Premium kasvohoito</span>
+                <span class="hinta-arvo">85 €</span>
+              </li>
+              <li class="hinta-rivi">
+                <span class="hinta-nimi">Vartalonhoito / kääre</span>
+                <span class="hinta-arvo">75 €</span>
+              </li>
+              <li class="hinta-rivi">
+                <span class="hinta-nimi">Jalkahoito</span>
+                <span class="hinta-arvo">55 €</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hinnasto-kategoria">
+            <h3 class="kategoria-otsikko">Ripset & Kulmat</h3>
+            <ul class="hinta-lista" role="list">
+              <li class="hinta-rivi">
+                <span class="hinta-nimi">Klassinen ripsi</span>
+                <span class="hinta-arvo">90 €</span>
+              </li>
+              <li class="hinta-rivi">
+                <span class="hinta-nimi">Volyymi / hybrid</span>
+                <span class="hinta-arvo">110 €</span>
+              </li>
+              <li class="hinta-rivi">
+                <span class="hinta-nimi">Ripsien huolto</span>
+                <span class="hinta-arvo">45 €</span>
+              </li>
+              <li class="hinta-rivi">
+                <span class="hinta-nimi">Kulmien muotoilu</span>
+                <span class="hinta-arvo">25 €</span>
+              </li>
+              <li class="hinta-rivi">
+                <span class="hinta-nimi">Kulmat + värjäys</span>
+                <span class="hinta-arvo">35 €</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hinnasto-kategoria hinnasto-kategoria--paketti">
+            <h3 class="kategoria-otsikko">Paketit & Hemmottelu</h3>
+            <ul class="hinta-lista" role="list">
+              <li class="hinta-rivi">
+                <span class="hinta-nimi">Täydellinen hemmottelu (3h)</span>
+                <span class="hinta-arvo">195 €</span>
+              </li>
+              <li class="hinta-rivi">
+                <span class="hinta-nimi">Kasvo + Jalka -paketti</span>
+                <span class="hinta-arvo">110 €</span>
+              </li>
+              <li class="hinta-rivi">
+                <span class="hinta-nimi">Lahjakortti (vapaa arvo)</span>
+                <span class="hinta-arvo">alk. 50 €</span>
+              </li>
+            </ul>
+            <a href="#yhteydenotto" class="btn btn-primary btn-small">Varaa paketti</a>
+          </div>
+        </div>
+
+        <p class="hinnasto-huomio">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+          Hintoihin lisätään ALV 25,5%. Peruutukset vähintään 24h ennen varattua aikaa.
+        </p>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section arvostelut" aria-labelledby="arvostelut-otsikko">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-eyebrow">Asiakkaat kertovat</p>
+          <h2 id="arvostelut-otsikko">Mitä asiakkaamme sanovat</h2>
+        </header>
+        <div class="arvostelut-grid">
+          <blockquote class="arvostelu-card">
+            <div class="tahdet" aria-label="5 tähteä viidestä">★★★★★</div>
+            <p>"Paras kasvohoito Helsingissä! Iho tuntui niin hyvältä viikkoja hoidon jälkeen. Tunnelma on rauhallinen ja palvelu ammattitaitoista. Tulen ehdottomasti uudelleen."</p>
+            <footer class="arvostelu-footer">
+              <span class="arvostelu-nimi">Maria K.</span>
+              <span class="arvostelu-pvm">Marraskuu 2024</span>
+            </footer>
+          </blockquote>
+          <blockquote class="arvostelu-card">
+            <div class="tahdet" aria-label="5 tähteä viidestä">★★★★★</div>
+            <p>"Ostin lahjakortin äidilleni syntymäpäivälahjaksi ja hän rakasti sitä. Lumière on niin kaunis ja lämmin paikka. Ripset onnistuivat täydellisesti, kiitos!"</p>
+            <footer class="arvostelu-footer">
+              <span class="arvostelu-nimi">Johanna M.</span>
+              <span class="arvostelu-pvm">Lokakuu 2024</span>
+            </footer>
+          </blockquote>
+          <blockquote class="arvostelu-card">
+            <div class="tahdet" aria-label="5 tähteä viidestä">★★★★★</div>
+            <p>"Olen käynyt monessa hoitolassa, mutta Lumière on omaa luokkaansa. Henkilökunta kuuntelee toiveet aidosti ja lopputulos ylitti odotukseni. Suosittelen lämpimästi!"</p>
+            <footer class="arvostelu-footer">
+              <span class="arvostelu-nimi">Susanna L.</span>
+              <span class="arvostelu-pvm">Syyskuu 2024</span>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUKIOLO & SIJAINTI -->
+    <section class="section aukiolo" id="aukiolo" aria-labelledby="aukiolo-otsikko">
+      <div class="container aukiolo-container">
+        <div class="aukiolo-info">
+          <p class="section-eyebrow">Löydä meidät</p>
+          <h2 id="aukiolo-otsikko">Aukioloajat & Sijainti</h2>
+
+          <div class="aukiolo-taulukko" role="table" aria-label="Aukioloajat">
+            <div class="aukiolo-rivi" role="row">
+              <span class="paiva" role="cell">Maanantai</span>
+              <span class="aika" role="cell">Suljettu</span>
+            </div>
+            <div class="aukiolo-rivi" role="row">
+              <span class="paiva" role="cell">Tiistai–Perjantai</span>
+              <span class="aika aika--auki" role="cell">09:00–18:00</span>
+            </div>
+            <div class="aukiolo-rivi" role="row">
+              <span class="paiva" role="cell">Lauantai</span>
+              <span class="aika aika--auki" role="cell">09:00–15:00</span>
+            </div>
+            <div class="aukiolo-rivi" role="row">
+              <span class="paiva" role="cell">Sunnuntai</span>
+              <span class="aika" role="cell">Suljettu</span>
+            </div>
+          </div>
+
+          <address class="yhteystiedot-lista" aria-label="Yhteystiedot">
+            <div class="yhteystieto">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Esimerkkikatu 12, 00100 Helsinki</span>
+            </div>
+            <div class="yhteystieto">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.4 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <a href="tel:+358401234567">+358 40 123 4567</a>
+            </div>
+            <div class="yhteystieto">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <a href="mailto:info@lumiere.fi">info@lumiere.fi</a>
+            </div>
+          </address>
+
+          <div class="some-linkit" aria-label="Sosiaalinen media">
+            <a href="https://instagram.com/lumiere_helsinki" class="some-linkki" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              @lumiere_helsinki
+            </a>
+            <a href="https://facebook.com/lumierekauneushoitola" class="some-linkki" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+              Lumière Kauneushoitola
+            </a>
+          </div>
+        </div>
+
+        <div class="kartta-placeholder" aria-label="Kartta sijainnista">
+          <iframe
+            title="Kauneushoitola Lumièren sijainti"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15925.285066534!2d24.9!3d60.17!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920bc2c35a3d95%3A0xf88c2f7f4f4e0b1a!2sHelsinki!5e0!3m2!1sfi!2sfi!4v1609459200000!5m2!1sfi!2sfi"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- YHTEYDENOTTO -->
+    <section class="section yhteydenotto" id="yhteydenotto" aria-labelledby="yhteydnotto-otsikko">
+      <div class="container yhteydenotto-container">
+        <div class="yhteydenotto-teksti">
+          <p class="section-eyebrow">Ota yhteyttä</p>
+          <h2 id="yhteydnotto-otsikko">Varaa aikasi</h2>
+          <p>Täytä lomake tai soita meille suoraan. Vastaamme yhteydenottoihin arkisin 24 tunnin kuluessa.</p>
+
+          <div class="lupaukset">
+            <div class="lupaus">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Maksuton alkukonsultaatio</span>
+            </div>
+            <div class="lupaus">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Vastauksemme 24h kuluessa</span>
+            </div>
+            <div class="lupaus">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Ei sitovaa varausta lomakkeella</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="yhteydenotto-lomake" id="contact-form" novalidate aria-label="Yhteydenottolomake">
+          <div class="form-group">
+            <label for="nimi">Nimi <span aria-hidden="true">*</span></label>
+            <input
+              type="text"
+              id="nimi"
+              name="nimi"
+              placeholder="Etunimi Sukunimi"
+              required
+              autocomplete="name"
+              aria-required="true"
+            >
+            <span class="form-error" id="nimi-error" role="alert" aria-live="polite"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="puhelin">Puhelinnumero <span aria-hidden="true">*</span></label>
+            <input
+              type="tel"
+              id="puhelin"
+              name="puhelin"
+              placeholder="+358 40 123 4567"
+              required
+              autocomplete="tel"
+              aria-required="true"
+            >
+            <span class="form-error" id="puhelin-error" role="alert" aria-live="polite"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="sahkoposti">Sähköposti</label>
+            <input
+              type="email"
+              id="sahkoposti"
+              name="sahkoposti"
+              placeholder="nimi@esimerkki.fi"
+              autocomplete="email"
+            >
+            <span class="form-error" id="sahkoposti-error" role="alert" aria-live="polite"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="palvelu">Kiinnostava palvelu</label>
+            <select id="palvelu" name="palvelu">
+              <option value="">Valitse palvelu…</option>
+              <option value="kasvohoito">Kasvohoito</option>
+              <option value="vartalonhoito">Vartalonhoito</option>
+              <option value="ripset">Ripsien pidennys</option>
+              <option value="kulmat">Kulmien muotoilu</option>
+              <option value="jalkahoito">Jalkahoito</option>
+              <option value="paketti">Täydellinen hemmottelu</option>
+              <option value="lahjakortti">Lahjakortti</option>
+              <option value="muu">Muu / En ole varma</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="viesti">Viesti / Toiveet</label>
+            <textarea
+              id="viesti"
+              name="viesti"
+              rows="4"
+              placeholder="Kerro toiveistasi tai kysy lisää…"
+            ></textarea>
+          </div>
+
+          <div class="form-group form-group--checkbox">
+            <label class="checkbox-label">
+              <input type="checkbox" name="tietosuoja" id="tietosuoja" required aria-required="true">
+              <span class="checkbox-custom" aria-hidden="true"></span>
+              <span>Hyväksyn tietojeni käsittelyn yhteydenottoa varten <span aria-hidden="true">*</span></span>
+            </label>
+            <span class="form-error" id="tietosuoja-error" role="alert" aria-live="polite"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-submit" aria-label="Lähetä yhteydenottopyyntö">
+            <span class="btn-text">Lähetä yhteydenotto</span>
+            <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+          </button>
+
+          <div class="form-success" id="form-success" role="status" aria-live="polite" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <p><strong>Kiitos yhteydenotostasi!</strong> Olemme sinuun yhteydessä pian.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#" class="logo logo--footer" aria-label="Kauneushoitola Lumière – etusivu">
+          <span class="logo-pre">Kauneushoitola</span>
+          <span class="logo-main">Lumière</span>
+        </a>
+        <p>Yksilölliset kauneushoidot sydän-Helsingissä. Hehkuva iho, levollinen mieli.</p>
+      </div>
+      <div class="footer-nav" aria-label="Footer navigaatio">
+        <h3>Navigaatio</h3>
+        <ul role="list">
+          <li><a href="#palvelut">Palvelut</a></li>
+          <li><a href="#hinnasto">Hinnasto</a></li>
+          <li><a href="#meista">Meistä</a></li>
+          <li><a href="#aukiolo">Aukiolo</a></li>
+          <li><a href="#yhteydenotto">Yhteydenotto</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact" aria-label="Yhteystiedot">
+        <h3>Yhteystiedot</h3>
+        <address>
+          <p>Esimerkkikatu 12<br>00100 Helsinki</p>
+          <p><a href="tel:+358401234567">+358 40 123 4567</a></p>
+          <p><a href="mailto:info@lumiere.fi">info@lumiere.fi</a></p>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Kauneushoitola Lumière. Kaikki oikeudet pidätetään.</p>
+      <p class="footer-credit">Sivut: <a href="https://nopeatsivut.fi" target="_blank" rel="noopener noreferrer">Nopeat Sivut</a></p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
